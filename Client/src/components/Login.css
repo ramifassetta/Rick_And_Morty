@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    background-color: blueviolet;
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 750px;
+    margin-top: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 75%;
+    height: 75%;
+}
+
+.submitButton {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #4CAF50; /* Cambia el color de fondo del botón */
+    color: white; /* Cambia el color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    
+    font-weight: bolder;
+}
+
+label {
+    margin-top: 15px;
+    font-size: 18px; /* Cambia el tamaño de fuente de las etiquetas */
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+    align-items: start;
+    width: fit-content;
+    color: violet;
+    text-shadow: 2px 2px 4px darkgreen;
+}
+
+input {
+    width: 95%;
+    
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px; /* Agrega un espacio interior a los campos de entrada */
+    border: 1px solid #ccc; /* Agrega un borde a los campos de entrada */
+    border-radius: 5px;
+    font-size: 16px; /* Cambia el tamaño de fuente de los campos de entrada */
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif; /* Utiliza una fuente similar a la de "Rick and Morty" */
+    color: #8BC34A; /* Utiliza un color similar al del logotipo de "Rick and Morty" */
+    font-size: 45px; /* Ajusta el tamaño de fuente según tus preferencias */
+    -webkit-text-stroke: 2px #000; /* Ancho y color del contorno */
+    /* text-stroke: 2px #000; Ancho y color del contorno */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.image{
+    height: 250px;
+    width: 500px;
+}

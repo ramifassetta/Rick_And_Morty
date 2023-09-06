@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { Cards } from './components/Cards.jsx';
-import { Nav } from './components/Nav';
+import { Nav } from './components/Nav/Nav.jsx';
 import axios from 'axios';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { About } from './components/About';

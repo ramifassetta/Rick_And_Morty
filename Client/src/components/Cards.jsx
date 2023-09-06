@@ -1,10 +1,10 @@
-import Card from './Card';
+import Card from './Card/Card';
 
 export const Cards = (props) => {
    const personajes = props.characters;
    
    return (
-      <div>
+      <div style={{display: "flex", flexDirection: "row", marginTop: "50px"}}>
          {
             personajes.map(character => (
                <Card

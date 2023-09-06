@@ -1,0 +1,29 @@
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.search {
+  border-radius: 50px;
+  margin-top: 0;
+}
+
+.search:focus {/* Cambiar el color del borde cuando se enfoca */
+  outline: none; /* Quitar el borde al hacer clic (outline) */
+}
+
+.add {
+  color: white;
+  font-weight: bolder;
+  background-color: #8338ec;
+  border: none;
+  border-radius: 5px;
+  width: 75px;
+  font-size: medium;
+  height: 30px;
+  margin-top: 0;
+  margin-left: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}

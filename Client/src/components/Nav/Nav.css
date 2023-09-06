@@ -1,0 +1,98 @@
+.nav {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+  background-color: #a2d2ff;
+  margin-top: 0px;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centra verticalmente los elementos */
+  font-weight: bolder;
+  color: black;
+  font-size: large;
+  text-shadow:  2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.rick {
+  width: 50px;
+  height: 50px;
+}
+
+.aboutYfavorites {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-right: 20px;
+    list-style: none;
+    font-weight: bolder;
+}
+
+/* Agrega estilos para los elementos de la barra de navegación */
+
+
+/* Estilos para el elemento de búsqueda */
+.SearchBar {
+  flex-grow: 1; /* Hace que el elemento de búsqueda ocupe el espacio restante */
+  text-align: center; /* Centra horizontalmente el elemento de búsqueda */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.about{
+    margin-right: 20px;
+    color: white;
+    font-weight: bolder;
+    background-color: #8338ec;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    height: 30px; /* Establece una altura fija */
+    display: flex; /* Agrega display: flex */
+    align-items: center; /* Centra verticalmente */
+
+}
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nav-list{
+    list-style: none;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  height: 100%; /* Utilizar toda la altura de la barra de navegación */
+  margin: 0;
+  padding: 0;
+}
+
+.favorites{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: bolder;
+    background-color: #8338ec;
+    border: none;
+    border-radius: 5px;
+    /* width: 75px; */
+    font-size: medium;
+    /* height: 30px; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    height: 30px;
+}
+
+.homep{
+  margin: 0;
+  margin-left: 15px;
+  font-family: monospace;
+}

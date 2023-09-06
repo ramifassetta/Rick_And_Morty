@@ -1,7 +1,9 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { addFav, removeFav } from "../redux/actions";
+import { addFav, removeFav } from "../../redux/actions";
 import { connect } from "react-redux"
 import { useState, useEffect } from "react";
+import portal from "../../images/rickandmortyportal.png"
+import "./Card.css"
 
 const Card = (props) =>{
    const addFav = props.addFav;
@@ -39,16 +41,21 @@ const Card = (props) =>{
    
    return ( 
       <div className="card">
-         <button onClick={handleFavorite}>{isFav ? '❤️' : '🤍' }</button>
-         {checkLocation !=='/favorites' && <button onClick={() => props.onClose(props.id)} className="boton">X</button>}
-         <NavLink to={`/detail/${props.id}`}>
-            <h2>{props.name}</h2> 
-         </NavLink>
-         <h2>{props.status}</h2>
-         <h2>{props.species}</h2>
-         <h2>{props.gender}</h2>
-         <h2>{props.origin}</h2>
-         <img src={props.image} alt='' className="imagen"/>
+         <img src={portal} alt="" className="portal"/>
+         <div className="overlay">
+            <div className="buttons">
+               <button onClick={handleFavorite} className="fav">{isFav ? '❤️' : '🤍' }</button>
+               {checkLocation !=='/favorites' && <button onClick={() => props.onClose(props.id)} className="boton">X</button>}
+            </div>
+            <NavLink to={`/detail/${props.id}`} className="nombre">
+               <h2 >{props.name}</h2> 
+            </NavLink>
+            <h3>{props.status}</h3>
+            <h3>{props.species}</h3>
+            <h3>{props.gender}</h3>
+            <h3>{props.origin}</h3>
+            <img src={props.image} alt='' className="imagen"/>
+         </div>
       </div>
    );
    

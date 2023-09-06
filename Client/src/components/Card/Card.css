@@ -1,0 +1,63 @@
+.portal {
+  position: relative;
+  height: 400px;
+}
+.card {
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  flex-direction: row;
+}
+.overlay {
+  position: absolute; /* Se superpondrá a la imagen de fondo */
+  color: white; /* Color del texto */
+  padding: 20px; /* Espaciado interno para los elementos dentro del overlay */
+  display: flex; /* Para alinear los elementos de forma horizontal */
+  flex-direction: column; /* Para alinear los elementos en una columna */
+  justify-content: center; /* Para centrar verticalmente los elementos */
+  align-items: center; /* Para centrar horizontalmente los elementos */
+  text-align: center; /* Para centrar el texto horizontalmente */
+  /* margin-top: ; */
+}
+
+.overlay button {
+  margin: 5px; /* Espaciado entre botones */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: larger;
+  background-color: rgba(155, 34, 38, 0.8);
+  border-radius: 5px;
+  color: white;
+}
+
+.overlay h2 {
+  margin: 10px 0; /* Espaciado entre elementos de texto */
+}
+
+.imagen {
+  border-radius: 5px;
+  height: 150px;
+}
+
+.buttons {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton {
+  background-color: rgba(155, 34, 38, 0.8);
+  border-radius: 5px;
+}
+.nombre {
+  text-decoration: none;
+  color: #ee9b00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.nombre:hover {
+  color: blueviolet;
+}

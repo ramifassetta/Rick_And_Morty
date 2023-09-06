@@ -1,45 +1,64 @@
-import { useState } from "react"
+import { useState } from "react";
 import { validation } from "../validation";
+import "./Login.css";
+import rickandmorty from "../images/rickandmorty.png";
 
-
-export const Form = ({login}) => { 
-
-  const handleSubmit = (event) => { 
-    event.preventDefault()
+export const Form = ({ login }) => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
     login(userData);
-  }
+  };
 
-  const [errors, setErrors] = useState({})
+  const [errors, setErrors] = useState({});
 
   const [userData, setUserData] = useState({
     email: "",
-    password: ""
+    password: "",
   });
 
   const handleChange = (event) => {
     setUserData({
       ...userData,
-      [event.target.name]: event.target.value
-    })
-    
-    setErrors(validation({
-      ...userData,
-      [event.target.name]: event.target.value
-    }))
-  }
+      [event.target.name]: event.target.value,
+    });
+
+    setErrors(
+      validation({
+        ...userData,
+        [event.target.name]: event.target.value,
+      })
+    );
+  };
 
   return (
-    <form onSubmit = {handleSubmit}>
-        <label htmlFor="email">Email: </label>
-        <input type="email" placeholder="ingrese su email" name="email" value={userData.email} onChange={handleChange}/>
-        {errors.email && <p style={{color:"red"}}>{errors.email}</p>}
-        <hr />
-        <label htmlFor="password">Password: </label>
-        <input type="text" placeholder="ingrese su contraseña" name="password" value={userData.password} onChange={handleChange}/>
-        {errors.password && <p style={{color:"red"}}>{errors.password}</p>}
+    <div>
+      <div className="container">
+        <img src={rickandmorty} alt="" className="image" />
+        <h3>Login</h3>
+        <form onSubmit={handleSubmit} className="form">
+          <label htmlFor="email">Email </label>
+          <input
+            type="email"
+            placeholder="Ingrese su email"
+            name="email"
+            value={userData.email}
+            onChange={handleChange}
+          />
+          {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
 
-        <button>Submit</button> 
+          <label htmlFor="password">Password </label>
+          <input
+            type="text"
+            placeholder="Ingrese su contraseña"
+            name="password"
+            value={userData.password}
+            onChange={handleChange}
+          />
+          {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}
 
-    </form>
-  )
-}
+          <button className="submitButton">Submit</button>
+        </form>
+      </div>
+    </div>
+  );
+};
