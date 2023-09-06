@@ -6,8 +6,7 @@
     text-align: center;
     margin: auto;
     border-radius: 15px;
-    background-color: blueviolet;
-    opacity: 0.8;
+    background-color: rgba(138, 43, 226, 0.8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     height: 750px;
     margin-top: 50px;

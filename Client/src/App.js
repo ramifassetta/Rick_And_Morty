@@ -5,10 +5,10 @@ import { Nav } from './components/Nav/Nav.jsx';
 import axios from 'axios';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { About } from './components/About';
-import { Detail } from './components/Detail';
+import { Detail } from './components/Detail/Detail';
 import { Form } from './components/Form';
 import { useNavigate } from 'react-router-dom';
-import  Favorites  from './components/Favorites';
+import  Favorites  from './components/Favorites/Favorites';
 
 const URL_BASE = "http://localhost:3001/rickandmorty/character";
 // const API_KEY = "f9895bbe94b7.916d8f8f621214692819";

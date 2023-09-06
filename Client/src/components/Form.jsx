@@ -39,22 +39,22 @@ export const Form = ({ login }) => {
           <label htmlFor="email">Email </label>
           <input
             type="email"
-            placeholder="Ingrese su email"
+            placeholder="Enter your email"
             name="email"
             value={userData.email}
             onChange={handleChange}
           />
-          {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
+          {errors.email && <p style={{ color: "red", fontWeight: "bold", WebkitTextStroke: "1px black", fontSize: "large" }}>{errors.email}</p>}
 
           <label htmlFor="password">Password </label>
           <input
             type="text"
-            placeholder="Ingrese su contraseña"
+            placeholder="Enter your password"
             name="password"
             value={userData.password}
             onChange={handleChange}
           />
-          {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}
+          {errors.password && <p style={{ color: "red", fontWeight: "bold", WebkitTextStroke: "1px black", fontSize: "large"}}>{errors.password}</p>}
 
           <button className="submitButton">Submit</button>
         </form>

@@ -1,0 +1,23 @@
+.detail {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  background-color: blueviolet;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-left: 25px;
+  position: relative;
+}
+.titles {
+  color: #4cc9f0;
+}
+span {
+  font-weight: bold; /* Ejemplo de estilo */
+  color: #fff; /* Ejemplo de estilo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.imagenDetail {
+  border-radius: 5px;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
