@@ -34,7 +34,7 @@ export const Form = ({ login }) => {
     <div>
       <div className="container">
         <img src={rickandmorty} alt="" className="image" />
-        <h3>Login</h3>
+        <h3 className="login">Login</h3>
         <form onSubmit={handleSubmit} className="form">
           <label htmlFor="email">Email </label>
           <input

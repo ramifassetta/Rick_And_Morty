@@ -49,3 +49,11 @@ select option {
   border: none;
 }
 
+.orderYfilter{
+  font-family: cursive;
+  color: #7fc8f8; 
+  font-size: 25px; 
+  -webkit-text-stroke: 1px #000; 
+  margin: 0px 5px 0px 15px;
+}
+

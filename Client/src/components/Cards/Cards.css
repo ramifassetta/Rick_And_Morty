@@ -1,0 +1,22 @@
+.prevNext{
+    background: none;
+    border: none;
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+    color: white;
+}
+
+.page{
+    border-radius: 5px;
+    /* background-color: #fca311; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.p-page{
+    font-family: cursive;
+  color: #9ef01a; 
+  font-size:xx-large; 
+  -webkit-text-stroke: 0.5px #000; 
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

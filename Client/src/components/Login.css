@@ -68,6 +68,15 @@ h3 {
     margin-bottom: 0px;
     
 }
+.login{
+    font-family: cursive; /* Utiliza una fuente similar a la de "Rick and Morty" */
+    color: #8BC34A; /* Utiliza un color similar al del logotipo de "Rick and Morty" */
+    font-size: 45px; /* Ajusta el tamaño de fuente según tus preferencias */
+    -webkit-text-stroke: 2px #000; /* Ancho y color del contorno */
+    /* text-stroke: 2px #000; Ancho y color del contorno */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 .image{
     height: 250px;

@@ -1,28 +1,10 @@
 body{
    background-image: url("https://wallpaperaccess.com/full/85327.png") ; 
-}
-/* .App {
-   text-align: center;
-   
-}
-.card{
-   display: inline-block;
-   margin-left: 15px;
-   position: relative;
+   background-size: cover;
+   background-repeat: no-repeat;
+   overflow-x: hidden;
+   background-color: #282b3b;
 }
 
-.imagen{
-   border-radius: 5px;
-   border: 5px solid black;
-}
-
-.boton{
-   background-color: red;
-   color: white;
-}
-h2{
-   margin:2px;
-   
-} */
 
 
