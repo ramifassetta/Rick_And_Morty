@@ -19,9 +19,10 @@ const Favorites = ({ myFavorites }) => {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "row", marginTop: "50px" }}>
+    <div>
+      <h3 className="andinez">My Favorites Characters:</h3>
       <div
-        style={{ position: "absolute", display: "flex", flexDirection: "row" }}
+        style={{ display: "flex", flexDirection: "row" }}
       >
         <div className="select">
           <p className="orderYfilter">Order by:</p>

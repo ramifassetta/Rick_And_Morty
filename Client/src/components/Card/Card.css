@@ -54,6 +54,9 @@
   background-color: rgba(155, 34, 38, 0.8);
   border-radius: 5px;
 }
+.boton:hover{
+  transform: scale(1.1);
+}
 .nombre {
   text-decoration: none;
   color: #ee9b00;
@@ -61,4 +64,5 @@
 }
 .nombre:hover {
   color: blueviolet;
+  transform: scale(1.1);
 }

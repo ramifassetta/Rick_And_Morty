@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "../Card/Card";
 import "./Cards.css";
+import logo from "../../images/rickandmorty.png"
 
 export const Cards = (props) => {
   const personajes = props.characters;
@@ -31,6 +32,7 @@ export const Cards = (props) => {
 
   return (
     <div>
+      <img src={logo} alt="" style={{height: "170px", marginLeft: "20px", position: "absolute"}}/>
       <div
         className=""
         style={{

@@ -2,7 +2,6 @@ import "./About.css";
 import github from "../../images/github.png";
 import linkedin from "../../images/linkedin.png";
 import rickandmorty from "../../images/rickandmorty.png";
-import garage from "../../images/rickandmortyGarage.png";
 import react from "../../images/react.png";
 import redux from "../../images/redux.png";
 import css from "../../images/css.png";
@@ -21,16 +20,6 @@ export const About = () => {
         margin: "auto",
       }}
     >
-      {/* <img
-        src={garage}
-        alt=""
-        style={{
-          borderRadius: "10px",
-          height: "800px",
-          position: "absolute",
-          margin: "auto",
-        }}
-      /> */}
       <div className="aboutme">
         <img src={rickandmorty} alt="" style={{ height: "250px" }} />
         <div className="name">
@@ -81,14 +70,14 @@ export const About = () => {
               marginLeft: "15px",
             }}
           >
-            <a href="https://github.com/ramifassetta">
+            <a href="https://github.com/ramifassetta" target="_blank">
               <img
                 src={github}
                 alt=""
                 style={{ height: "75px", marginRight: "20px" }}
               />
             </a>
-            <a href="https://www.linkedin.com/in/ramiro-fassetta/">
+            <a href="https://www.linkedin.com/in/ramiro-fassetta/" target="_blank">
               <img src={linkedin} alt="" style={{ height: "75px" }} />
             </a>
           </div>

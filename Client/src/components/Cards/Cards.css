@@ -6,7 +6,9 @@
     cursor: pointer;
     color: white;
 }
-
+.prevNext:hover{
+    transform: scale(1.5);
+}
 .page{
     border-radius: 5px;
     /* background-color: #fca311; */
